@@ -1,0 +1,31 @@
+name: Test Formulae
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  test:
+    strategy:
+      matrix:
+        os: [macos-latest, ubuntu-latest]
+    runs-on: ${{ matrix.os }}
+    
+    steps:
+      - uses: actions/checkout@v4
+      
+      - name: Set up Homebrew
+        id: set-up-homebrew
+        uses: Homebrew/actions/setup-homebrew@master
+        
+      - name: Check formulae
+        run: |
+          brew audit --new Formula/blg.rb || true
+          brew audit --new Formula/mcp-backlog-server.rb || true
+          
+      - name: Test formulae syntax
+        run: |
+          brew style Formula/blg.rb
+          brew style Formula/mcp-backlog-server.rb
