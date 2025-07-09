@@ -1,26 +1,26 @@
 class McpBacklogServer < Formula
   desc "Model Context Protocol server for Backlog API"
-  homepage "https://github.com/safx/backlog-api-client"
+  homepage "https://github.com/safx/backlog-mcp-server-rust"
   license "MIT"
   version "0.1.0"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/safx/backlog-api-client/releases/download/v0.1.0/mcp-backlog-server-v0.1.0-aarch64-macos.tar.gz"
-      sha256 "PLACEHOLDER_SHA256_ARM64"
+      url "https://github.com/safx/backlog-mcp-server-rust/releases/download/v0.1.0/mcp-backlog-server-v0.1.0-aarch64-macos.tar.gz"
+      sha256 "bb6a87994aecbff1aec7edfce8801372ea099d89f0ff1ba12434cef52c0d3fbd"
     else
-      url "https://github.com/safx/backlog-api-client/releases/download/v0.1.0/mcp-backlog-server-v0.1.0-x86_64-macos.tar.gz"
-      sha256 "PLACEHOLDER_SHA256_X86_64"
+      url "https://github.com/safx/backlog-mcp-server-rust/releases/download/v0.1.0/mcp-backlog-server-v0.1.0-x86_64-macos.tar.gz"
+      sha256 "4181a32f7d34a1dae0ecdb14a19bb0b29e71c2bafcd67ceb6e48191e0c515988"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
-      url "https://github.com/safx/backlog-api-client/releases/download/v0.1.0/mcp-backlog-server-v0.1.0-aarch64-linux.tar.gz"
-      sha256 "PLACEHOLDER_SHA256_LINUX_ARM64"
+      url "https://github.com/safx/backlog-mcp-server-rust/releases/download/v0.1.0/mcp-backlog-server-v0.1.0-aarch64-linux.tar.gz"
+      sha256 "424d59f78ff6faebac19aac6359cff517ad03dd0a8a0869c954fd2a6b54b970b"
     else
-      url "https://github.com/safx/backlog-api-client/releases/download/v0.1.0/mcp-backlog-server-v0.1.0-x86_64-linux.tar.gz"
-      sha256 "PLACEHOLDER_SHA256_LINUX_X86_64"
+      url "https://github.com/safx/backlog-mcp-server-rust/releases/download/v0.1.0/mcp-backlog-server-v0.1.0-x86_64-linux.tar.gz"
+      sha256 "7927c6b874fd39b6a438898de6288fac0d1e8c68539e80c5cbb603991e6fbb9d"
     end
   end
 
@@ -35,12 +35,11 @@ class McpBacklogServer < Formula
         export BACKLOG_API_KEY="your-api-key"
       
       For MCP client configuration, see:
-        https://github.com/safx/backlog-api-client#mcp-server
+        https://github.com/safx/backlog-mcp-server-rust#mcp-server
     EOS
   end
 
   test do
-    # MCP server typically doesn't have a --version flag, so we just check existence
     assert_predicate bin/"mcp-backlog-server", :exist?
     assert_predicate bin/"mcp-backlog-server", :executable?
   end
