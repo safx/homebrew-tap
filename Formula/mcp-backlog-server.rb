@@ -2,25 +2,25 @@ class McpBacklogServer < Formula
   desc "Model Context Protocol server for Backlog API"
   homepage "https://github.com/safx/backlog-mcp-server-rust"
   license "MIT"
-  version "0.1.0"
+  version "0.1.1"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/safx/backlog-mcp-server-rust/releases/download/v0.1.0/mcp-backlog-server-v0.1.0-aarch64-macos.tar.gz"
-      sha256 "bb6a87994aecbff1aec7edfce8801372ea099d89f0ff1ba12434cef52c0d3fbd"
+      url "https://github.com/safx/backlog-mcp-server-rust/releases/download/v0.1.1/mcp-backlog-server-v0.1.1-aarch64-macos.tar.gz"
+      sha256 "b7a4b80631d0f0c1e2218cc257f2a892fcc469fd10f700612faa3b3bbff5065a"
     else
-      url "https://github.com/safx/backlog-mcp-server-rust/releases/download/v0.1.0/mcp-backlog-server-v0.1.0-x86_64-macos.tar.gz"
-      sha256 "4181a32f7d34a1dae0ecdb14a19bb0b29e71c2bafcd67ceb6e48191e0c515988"
+      url "https://github.com/safx/backlog-mcp-server-rust/releases/download/v0.1.1/mcp-backlog-server-v0.1.1-x86_64-macos.tar.gz"
+      sha256 "a5c751241b285b75f1ca3da468c90e5fc1d9bef46086cd587b450d70c6f20ae0"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
-      url "https://github.com/safx/backlog-mcp-server-rust/releases/download/v0.1.0/mcp-backlog-server-v0.1.0-aarch64-linux.tar.gz"
-      sha256 "424d59f78ff6faebac19aac6359cff517ad03dd0a8a0869c954fd2a6b54b970b"
+      url "https://github.com/safx/backlog-mcp-server-rust/releases/download/v0.1.1/mcp-backlog-server-v0.1.1-aarch64-linux.tar.gz"
+      sha256 "aaa394411e34458201aec2b71cef833a05a9a98ab10e85ee046bb5d7b226949e"
     else
-      url "https://github.com/safx/backlog-mcp-server-rust/releases/download/v0.1.0/mcp-backlog-server-v0.1.0-x86_64-linux.tar.gz"
-      sha256 "7927c6b874fd39b6a438898de6288fac0d1e8c68539e80c5cbb603991e6fbb9d"
+      url "https://github.com/safx/backlog-mcp-server-rust/releases/download/v0.1.1/mcp-backlog-server-v0.1.1-x86_64-linux.tar.gz"
+      sha256 "b9143b5baeda563fdae6a57e4128acddd6f0344292c25a994d02c1901e0d3f30"
     end
   end
 
