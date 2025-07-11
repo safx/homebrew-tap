@@ -7,20 +7,20 @@ class Blg < Formula
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/safx/backlog-mcp-server-rust/releases/download/v0.1.1/blg-v0.1.1-aarch64-macos.tar.gz"
-      sha256 "4a75c1987ffce68f77875ed89e1f0323ee818141a58a8f91d975d5a1e0914243"
+      sha256 "1ea287c562acc4273c8e768cf57a4355032438ec0c6b3b3a42d00f416007290f"
     else
       url "https://github.com/safx/backlog-mcp-server-rust/releases/download/v0.1.1/blg-v0.1.1-x86_64-macos.tar.gz"
-      sha256 "9b1faa941aa4806e81edf48562593b5163327e0d9d3f535a58229df26a32dab4"
+      sha256 "27ddde8809afd3a4dc0e2be203d64ad3754afe69acb8625187e3aefd32092248"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
       url "https://github.com/safx/backlog-mcp-server-rust/releases/download/v0.1.1/blg-v0.1.1-aarch64-linux.tar.gz"
-      sha256 "a1d613c0c0e427b5c179895bbf913673294b40c3d2e140a08ce93dbc9b10edf8"
+      sha256 "ad9d62dc3f522da57e137943ab0d1aa04c64bbbd3cc7c23bf813ef45d0328a8f"
     else
       url "https://github.com/safx/backlog-mcp-server-rust/releases/download/v0.1.1/blg-v0.1.1-x86_64-linux.tar.gz"
-      sha256 "4d55e6e2cf675debb647b2515d1f4f8ec74f96cd3cdec6fe0f76d18fb815a4ea"
+      sha256 "c219ad887150187753b8084b8edfe65a01d1d074848d8cc6ff692e5fb55ad36a"
     end
   end
 
