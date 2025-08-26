@@ -1,50 +1,44 @@
-# Homebrew Tap for Backlog API Client
+# Homebrew Tap
 
-Homebrew tap for [Backlog API Client](https://github.com/safx/backlog-api-client) tools.
+Personal Homebrew tap for various tools and utilities.
 
 ## Installation
 
 ```bash
 brew tap safx/tap
-brew install blg
-brew install mcp-backlog-server
 ```
 
 ## Available Formulae
 
-- `blg` - Command-line interface for Backlog API
-- `mcp-backlog-server` - Model Context Protocol server for Backlog API
+### Development Tools
 
-## Usage
+- [`blg`](https://github.com/safx/backlog-api-client) - Command-line interface for Backlog API
+- [`mcp-backlog-server`](https://github.com/safx/backlog-api-client) - Model Context Protocol server for Backlog API
+- [`ccr`](https://github.com/safx/ccr) - Claude Code statusline hook for usage statistics and costs
 
-### blg CLI
+## Installing Packages
 
 ```bash
-# Set environment variables
-export BACKLOG_BASE_URL="https://your-space.backlog.com"
-export BACKLOG_API_KEY="your-api-key"
-
-# Use the CLI
-blg project list
-blg issue list --project-key PROJECT
+# Install individual packages
+brew install blg
+brew install mcp-backlog-server
+brew install ccr
 ```
-
-### MCP Server
-
-See the [MCP configuration guide](https://github.com/safx/backlog-api-client#mcp-server) for setup instructions.
 
 ## Updating
 
 ```bash
 brew update
-brew upgrade blg
-brew upgrade mcp-backlog-server
+brew upgrade <package>
 ```
 
 ## Uninstalling
 
 ```bash
-brew uninstall blg
-brew uninstall mcp-backlog-server
-brew untap safx/tap
+brew uninstall <package>
+brew untap safx/tap  # Remove the tap
 ```
+
+## License
+
+Each formula has its own license. Please refer to the respective project repositories for license information.
