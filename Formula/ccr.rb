@@ -7,20 +7,20 @@ class Ccr < Formula
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/safx/ccr/releases/download/v0.1.0/ccr-v0.1.0-aarch64-macos.tar.gz"
-      sha256 "cb5b185069a91c2c9f3210d278385840c71430b0dd8f9ff17e0c8aeb98000229"
+      sha256 "a42bfb38f1cd7f6e76e5f43d3120b379dcff6eee7da9df095e8d14f113aa7aa3"
     else
       url "https://github.com/safx/ccr/releases/download/v0.1.0/ccr-v0.1.0-x86_64-macos.tar.gz"
-      sha256 "17b4c4715e11bbacc481f09d1747deb5bf04df1636b94f92b701ac2ecc3ab272"
+      sha256 "1ee4e9a149057ed9f88f49c8206ae3452e703987d11328d3a5bb97255599e020"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
       url "https://github.com/safx/ccr/releases/download/v0.1.0/ccr-v0.1.0-aarch64-linux.tar.gz"
-      sha256 "16a5d1a52c633cf392e874c908ad899651b27ce6f76a412801221ced8940fbd5"
+      sha256 "ebf3ee1b8f6a6ca68307567dc24fdb877f13c23f27922fe982539eadbe9d0e52"
     else
       url "https://github.com/safx/ccr/releases/download/v0.1.0/ccr-v0.1.0-x86_64-linux.tar.gz"
-      sha256 "076ca10018c97f1a0ab5f9f5c9ca52aa4992522923fe51b3acd0345cc9cf94a7"
+      sha256 "aed932c1fd67a2ced58d24a204bd16af05d1d0ffa3399b19871250e5129706fc"
     end
   end
 
