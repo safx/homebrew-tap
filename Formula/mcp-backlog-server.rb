@@ -2,25 +2,25 @@ class McpBacklogServer < Formula
   desc "Model Context Protocol server for Backlog API"
   homepage "https://github.com/safx/backlog-mcp-server-rust"
   license "MIT"
-  version "0.1.1"
+  version "0.1.2"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/safx/backlog-mcp-server-rust/releases/download/v0.1.1/mcp-backlog-server-v0.1.1-aarch64-macos.tar.gz"
-      sha256 "a2fa16266f647948380bc097d3c0543ef48d455318377dbb8090d36765067519"
+      url "https://github.com/safx/backlog-mcp-server-rust/releases/download/v0.1.2/mcp-backlog-server-v0.1.2-aarch64-macos.tar.gz"
+      sha256 "19e32d394b593e9d22eb2732193cbb018e4c43a61ef2caddde7761b755e67560"
     else
-      url "https://github.com/safx/backlog-mcp-server-rust/releases/download/v0.1.1/mcp-backlog-server-v0.1.1-x86_64-macos.tar.gz"
-      sha256 "888fbc41b8d5b96ec0670ce9f82d5a3ad816a52bf2f31d43a324336e1c7f9755"
+      url "https://github.com/safx/backlog-mcp-server-rust/releases/download/v0.1.2/mcp-backlog-server-v0.1.2-x86_64-macos.tar.gz"
+      sha256 "ec65d26de5d264d42fc97c474b1f75cea3ce9709d445674388ca2e75b7f5e277"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
-      url "https://github.com/safx/backlog-mcp-server-rust/releases/download/v0.1.1/mcp-backlog-server-v0.1.1-aarch64-linux.tar.gz"
-      sha256 "10d1f280c55e1d6e09d78952633b86101e5cdfb798cc1791c87491f3ea1249bb"
+      url "https://github.com/safx/backlog-mcp-server-rust/releases/download/v0.1.2/mcp-backlog-server-v0.1.2-aarch64-linux.tar.gz"
+      sha256 "1d947782e807730b8a244b30858e4235ce1840c5fa4a2b1281a515c57776b322"
     else
-      url "https://github.com/safx/backlog-mcp-server-rust/releases/download/v0.1.1/mcp-backlog-server-v0.1.1-x86_64-linux.tar.gz"
-      sha256 "dfdc579f1d0cfa2b53f497e273ef2e284bb2c33865a1b87e044fdcce96f506ea"
+      url "https://github.com/safx/backlog-mcp-server-rust/releases/download/v0.1.2/mcp-backlog-server-v0.1.2-x86_64-linux.tar.gz"
+      sha256 "8afdc4b35a45636219d6c34a20c5e3f0684a7931c4b96fc6d657ffe2c7450db5"
     end
   end
 

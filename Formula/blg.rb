@@ -2,25 +2,25 @@ class Blg < Formula
   desc "Command-line interface for Backlog API"
   homepage "https://github.com/safx/backlog-mcp-server-rust"
   license "MIT"
-  version "0.1.1"
+  version "0.1.2"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/safx/backlog-mcp-server-rust/releases/download/v0.1.1/blg-v0.1.1-aarch64-macos.tar.gz"
-      sha256 "1ea287c562acc4273c8e768cf57a4355032438ec0c6b3b3a42d00f416007290f"
+      url "https://github.com/safx/backlog-mcp-server-rust/releases/download/v0.1.2/blg-v0.1.2-aarch64-macos.tar.gz"
+      sha256 "b04f479bdcd9018d1011a92ff9c430b0df0740960d8b17064b93e7b96d3fe04e"
     else
-      url "https://github.com/safx/backlog-mcp-server-rust/releases/download/v0.1.1/blg-v0.1.1-x86_64-macos.tar.gz"
-      sha256 "27ddde8809afd3a4dc0e2be203d64ad3754afe69acb8625187e3aefd32092248"
+      url "https://github.com/safx/backlog-mcp-server-rust/releases/download/v0.1.2/blg-v0.1.2-x86_64-macos.tar.gz"
+      sha256 "102c7d3437221c16ebafd4f2fd445db6570e774e36441111e4e432988e99a602"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
-      url "https://github.com/safx/backlog-mcp-server-rust/releases/download/v0.1.1/blg-v0.1.1-aarch64-linux.tar.gz"
-      sha256 "ad9d62dc3f522da57e137943ab0d1aa04c64bbbd3cc7c23bf813ef45d0328a8f"
+      url "https://github.com/safx/backlog-mcp-server-rust/releases/download/v0.1.2/blg-v0.1.2-aarch64-linux.tar.gz"
+      sha256 "7ffcf32b5eb4e33801172ee0ad50055c725c64cf2997aa159f649a2ed3a2ce60"
     else
-      url "https://github.com/safx/backlog-mcp-server-rust/releases/download/v0.1.1/blg-v0.1.1-x86_64-linux.tar.gz"
-      sha256 "c219ad887150187753b8084b8edfe65a01d1d074848d8cc6ff692e5fb55ad36a"
+      url "https://github.com/safx/backlog-mcp-server-rust/releases/download/v0.1.2/blg-v0.1.2-x86_64-linux.tar.gz"
+      sha256 "2985cfc5de97b7cfd0afb4fef6956b337c6bd3b79bef7dbc5047a84946b33f04"
     end
   end
 
