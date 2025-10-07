@@ -7,20 +7,20 @@ class McpBacklogServer < Formula
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/safx/backlog-mcp-server-rust/releases/download/v0.1.2/mcp-backlog-server-v0.1.2-aarch64-macos.tar.gz"
-      sha256 "19e32d394b593e9d22eb2732193cbb018e4c43a61ef2caddde7761b755e67560"
+      sha256 "84504e72bec51b100265a4afd1aa6c3484087f32ec87ca3abb57a954baed945a"
     else
       url "https://github.com/safx/backlog-mcp-server-rust/releases/download/v0.1.2/mcp-backlog-server-v0.1.2-x86_64-macos.tar.gz"
-      sha256 "ec65d26de5d264d42fc97c474b1f75cea3ce9709d445674388ca2e75b7f5e277"
+      sha256 "a3eedd9df85adfb336d89de15860cc904125d9373987ccd7042028800053b8b2"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
       url "https://github.com/safx/backlog-mcp-server-rust/releases/download/v0.1.2/mcp-backlog-server-v0.1.2-aarch64-linux.tar.gz"
-      sha256 "1d947782e807730b8a244b30858e4235ce1840c5fa4a2b1281a515c57776b322"
+      sha256 "f4063976e32f29b42bd2802671015bb376e05aa98c198d1de3f34c73ca80a55f"
     else
       url "https://github.com/safx/backlog-mcp-server-rust/releases/download/v0.1.2/mcp-backlog-server-v0.1.2-x86_64-linux.tar.gz"
-      sha256 "8afdc4b35a45636219d6c34a20c5e3f0684a7931c4b96fc6d657ffe2c7450db5"
+      sha256 "f9c2f7b0e31b789c2e99e0612e5544ffbc527ecae5979adeff4bb480b22bd920"
     end
   end
 
