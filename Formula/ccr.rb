@@ -2,25 +2,25 @@ class Ccr < Formula
   desc "Claude Code statusline hook for usage statistics and costs"
   homepage "https://github.com/safx/ccr"
   license "MIT"
-  version "0.1.0"
+  version "0.1.1"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/safx/ccr/releases/download/v0.1.0/ccr-v0.1.0-aarch64-macos.tar.gz"
-      sha256 "a42bfb38f1cd7f6e76e5f43d3120b379dcff6eee7da9df095e8d14f113aa7aa3"
+      url "https://github.com/safx/ccr/releases/download/v0.1.1/ccr-v0.1.1-aarch64-macos.tar.gz"
+      sha256 "ab15611cfcb84df5a392dc7d2e2f971193e1304f5d6a71c5bd02be941f418cd7"
     else
-      url "https://github.com/safx/ccr/releases/download/v0.1.0/ccr-v0.1.0-x86_64-macos.tar.gz"
-      sha256 "1ee4e9a149057ed9f88f49c8206ae3452e703987d11328d3a5bb97255599e020"
+      url "https://github.com/safx/ccr/releases/download/v0.1.1/ccr-v0.1.1-x86_64-macos.tar.gz"
+      sha256 "b08b20af67d40286d9d37be6497312ebdcfb3a39ecfe65e8c86c44e66eac6550"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
-      url "https://github.com/safx/ccr/releases/download/v0.1.0/ccr-v0.1.0-aarch64-linux.tar.gz"
-      sha256 "ebf3ee1b8f6a6ca68307567dc24fdb877f13c23f27922fe982539eadbe9d0e52"
+      url "https://github.com/safx/ccr/releases/download/v0.1.1/ccr-v0.1.1-aarch64-linux.tar.gz"
+      sha256 "89fa9334abc29e08ba3462a460583f275255d0004ecf86e5a45d823116452bc7"
     else
-      url "https://github.com/safx/ccr/releases/download/v0.1.0/ccr-v0.1.0-x86_64-linux.tar.gz"
-      sha256 "aed932c1fd67a2ced58d24a204bd16af05d1d0ffa3399b19871250e5129706fc"
+      url "https://github.com/safx/ccr/releases/download/v0.1.1/ccr-v0.1.1-x86_64-linux.tar.gz"
+      sha256 "833ae4f25cbc2da09fd16e0469452eb55e08e37c2a7554a212075e63f01b54e7"
     end
   end
 
