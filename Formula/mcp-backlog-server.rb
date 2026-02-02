@@ -2,25 +2,25 @@ class McpBacklogServer < Formula
   desc "Model Context Protocol server for Backlog API"
   homepage "https://github.com/safx/backlog-mcp-server-rust"
   license "MIT"
-  version "0.1.2"
+  version "0.1.3"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/safx/backlog-mcp-server-rust/releases/download/v0.1.2/mcp-backlog-server-v0.1.2-aarch64-macos.tar.gz"
-      sha256 "84504e72bec51b100265a4afd1aa6c3484087f32ec87ca3abb57a954baed945a"
+      url "https://github.com/safx/backlog-mcp-server-rust/releases/download/v0.1.3/mcp-backlog-server-v0.1.3-aarch64-macos.tar.gz"
+      sha256 "ab9c3b8b1b86afbcf928a4e3fc4625ee69eb0a0d250353fcc4d926296167ece9"
     else
-      url "https://github.com/safx/backlog-mcp-server-rust/releases/download/v0.1.2/mcp-backlog-server-v0.1.2-x86_64-macos.tar.gz"
-      sha256 "a3eedd9df85adfb336d89de15860cc904125d9373987ccd7042028800053b8b2"
+      url "https://github.com/safx/backlog-mcp-server-rust/releases/download/v0.1.3/mcp-backlog-server-v0.1.3-x86_64-macos.tar.gz"
+      sha256 "968fdb172e7669dad65d04024aa3e882e6fdf73434ea6c40b1d5ac5b497f8c92"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
-      url "https://github.com/safx/backlog-mcp-server-rust/releases/download/v0.1.2/mcp-backlog-server-v0.1.2-aarch64-linux.tar.gz"
-      sha256 "f4063976e32f29b42bd2802671015bb376e05aa98c198d1de3f34c73ca80a55f"
+      url "https://github.com/safx/backlog-mcp-server-rust/releases/download/v0.1.3/mcp-backlog-server-v0.1.3-aarch64-linux.tar.gz"
+      sha256 "de7c645f16be4e8a25d7eb8818ead8fb116fb24e6c7d9d6a145dcf19451ecfa6"
     else
-      url "https://github.com/safx/backlog-mcp-server-rust/releases/download/v0.1.2/mcp-backlog-server-v0.1.2-x86_64-linux.tar.gz"
-      sha256 "f9c2f7b0e31b789c2e99e0612e5544ffbc527ecae5979adeff4bb480b22bd920"
+      url "https://github.com/safx/backlog-mcp-server-rust/releases/download/v0.1.3/mcp-backlog-server-v0.1.3-x86_64-linux.tar.gz"
+      sha256 "8cc2aace9cbbd51f85c85a6e8cb01cb1f21102981566091f72d2a3a374148e58"
     end
   end
 
