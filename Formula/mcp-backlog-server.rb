@@ -2,25 +2,25 @@ class McpBacklogServer < Formula
   desc "Model Context Protocol server for Backlog API"
   homepage "https://github.com/safx/backlog-mcp-server-rust"
   license "MIT"
-  version "0.1.3"
+  version "0.1.4"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/safx/backlog-mcp-server-rust/releases/download/v0.1.3/mcp-backlog-server-v0.1.3-aarch64-macos.tar.gz"
-      sha256 "ab9c3b8b1b86afbcf928a4e3fc4625ee69eb0a0d250353fcc4d926296167ece9"
+      url "https://github.com/safx/backlog-mcp-server-rust/releases/download/v0.1.4/mcp-backlog-server-v0.1.4-aarch64-macos.tar.gz"
+      sha256 "d88f64957f910442eaedabb12678c2d63ec0a98058b83b70ff37728478f9b7ea"
     else
-      url "https://github.com/safx/backlog-mcp-server-rust/releases/download/v0.1.3/mcp-backlog-server-v0.1.3-x86_64-macos.tar.gz"
-      sha256 "968fdb172e7669dad65d04024aa3e882e6fdf73434ea6c40b1d5ac5b497f8c92"
+      url "https://github.com/safx/backlog-mcp-server-rust/releases/download/v0.1.4/mcp-backlog-server-v0.1.4-x86_64-macos.tar.gz"
+      sha256 "e9bb0a2a933a3cb089a9b7a74f19075097106aaea6fbd9e74106a94f071f3f3f"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
-      url "https://github.com/safx/backlog-mcp-server-rust/releases/download/v0.1.3/mcp-backlog-server-v0.1.3-aarch64-linux.tar.gz"
-      sha256 "de7c645f16be4e8a25d7eb8818ead8fb116fb24e6c7d9d6a145dcf19451ecfa6"
+      url "https://github.com/safx/backlog-mcp-server-rust/releases/download/v0.1.4/mcp-backlog-server-v0.1.4-aarch64-linux.tar.gz"
+      sha256 "f4d6312e535133708912db6b22bfbfaddbe3a565296e21247d94d2b35e4bf4a0"
     else
-      url "https://github.com/safx/backlog-mcp-server-rust/releases/download/v0.1.3/mcp-backlog-server-v0.1.3-x86_64-linux.tar.gz"
-      sha256 "8cc2aace9cbbd51f85c85a6e8cb01cb1f21102981566091f72d2a3a374148e58"
+      url "https://github.com/safx/backlog-mcp-server-rust/releases/download/v0.1.4/mcp-backlog-server-v0.1.4-x86_64-linux.tar.gz"
+      sha256 "2ca22d56fb014f9365f80e149a91c9791da87ce8dc77a745bb71aca145405610"
     end
   end
 
