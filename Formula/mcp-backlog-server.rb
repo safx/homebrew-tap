@@ -1,8 +1,8 @@
 class McpBacklogServer < Formula
   desc "Model Context Protocol server for Backlog API"
   homepage "https://github.com/safx/backlog-mcp-server-rust"
-  license "MIT"
   version "0.1.5"
+  license "MIT"
 
   on_macos do
     if Hardware::CPU.arm?
