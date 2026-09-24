@@ -33,14 +33,14 @@ class McpBacklogServer < Formula
       To use mcp-backlog-server, you need to set the following environment variables:
         export BACKLOG_BASE_URL="https://your-space.backlog.com"
         export BACKLOG_API_KEY="your-api-key"
-      
+
       For MCP client configuration, see:
         https://github.com/safx/backlog-mcp-server-rust#mcp-server
     EOS
   end
 
   test do
-    assert_predicate bin/"mcp-backlog-server", :exist?
+    assert_path_exists bin/"mcp-backlog-server"
     assert_predicate bin/"mcp-backlog-server", :executable?
   end
 end
