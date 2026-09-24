@@ -2,25 +2,25 @@ class McpBacklogServer < Formula
   desc "Model Context Protocol server for Backlog API"
   homepage "https://github.com/safx/backlog-mcp-server-rust"
   license "MIT"
-  version "0.1.4"
+  version "0.1.5"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/safx/backlog-mcp-server-rust/releases/download/v0.1.4/mcp-backlog-server-v0.1.4-aarch64-macos.tar.gz"
-      sha256 "d88f64957f910442eaedabb12678c2d63ec0a98058b83b70ff37728478f9b7ea"
+      url "https://github.com/safx/backlog-mcp-server-rust/releases/download/v0.1.5/mcp-backlog-server-v0.1.5-aarch64-macos.tar.gz"
+      sha256 "be61cd1a074a06c3fc6d308d4ca6facd9a2450e57cd287998300cdaf42dee033"
     else
-      url "https://github.com/safx/backlog-mcp-server-rust/releases/download/v0.1.4/mcp-backlog-server-v0.1.4-x86_64-macos.tar.gz"
-      sha256 "e9bb0a2a933a3cb089a9b7a74f19075097106aaea6fbd9e74106a94f071f3f3f"
+      url "https://github.com/safx/backlog-mcp-server-rust/releases/download/v0.1.5/mcp-backlog-server-v0.1.5-x86_64-macos.tar.gz"
+      sha256 "59d161890d73db1bf856c2c90c710ef8f7af30a35cbbaa593731c11b5d4691f9"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
-      url "https://github.com/safx/backlog-mcp-server-rust/releases/download/v0.1.4/mcp-backlog-server-v0.1.4-aarch64-linux.tar.gz"
-      sha256 "f4d6312e535133708912db6b22bfbfaddbe3a565296e21247d94d2b35e4bf4a0"
+      url "https://github.com/safx/backlog-mcp-server-rust/releases/download/v0.1.5/mcp-backlog-server-v0.1.5-aarch64-linux.tar.gz"
+      sha256 "d00387693d6278ff4e07689d1551e87056e1333d8b816602f6590f3d36e46f0d"
     else
-      url "https://github.com/safx/backlog-mcp-server-rust/releases/download/v0.1.4/mcp-backlog-server-v0.1.4-x86_64-linux.tar.gz"
-      sha256 "2ca22d56fb014f9365f80e149a91c9791da87ce8dc77a745bb71aca145405610"
+      url "https://github.com/safx/backlog-mcp-server-rust/releases/download/v0.1.5/mcp-backlog-server-v0.1.5-x86_64-linux.tar.gz"
+      sha256 "7715653f0fcec5acea0d1d85336acdee1ae1dc0f4dc50931d5fcef40b2d15781"
     end
   end
 
